@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami - Tokotopup.id</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Contact Page CSS -->
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- Custom CSS (Navbar & Footer - Override) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="foto/image 59.png" alt="TOKOTOPUP" class="logo-image">
+            </a>
+            <div class="d-flex align-items-center gap-2">
+                <button class="btn btn-member-area-icon d-lg-none" type="button" aria-label="Member Area">
+                    <i class="bi bi-person-circle"></i>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="solusi.html">Solusi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="fitur.html">Fitur</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="harga.html">Harga</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="afiliasi.html">Afiliasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom active" href="contact.html">Hubungi Kami</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-member-area">Member Area</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <h1 class="hero-title mb-3">Hubungi Kami</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with CTA -->
+    <section class="contact-section-unified py-5">
+        <div class="container">
+            <!-- Contact Form and Info -->
+            <div class="row g-4 mb-5">
+                <!-- Left Column - Contact Form -->
+                <div class="col-lg-6">
+                    <div class="contact-form-wrapper-modern">
+                        <div class="form-header">
+                            <h2 class="contact-form-title-modern mb-1">Kirim Pesan</h2>
+                            <p class="form-subtitle">Isi form di bawah ini dan kami akan menghubungi Anda segera</p>
+                        </div>
+                        <form id="contactForm" class="contact-form-modern">
+                            <div class="form-group-modern mb-3">
+                                <label for="email" class="form-label-modern">
+                                    <i class="bi bi-envelope form-icon"></i>
+                                    Email
+                                </label>
+                                <input type="email" class="form-control-modern" id="email" placeholder="nama@email.com" required>
+                            </div>
+                            <div class="form-group-modern mb-3">
+                                <label for="name" class="form-label-modern">
+                                    <i class="bi bi-person form-icon"></i>
+                                    Nama
+                                </label>
+                                <input type="text" class="form-control-modern" id="name" placeholder="Nama lengkap Anda" required>
+                            </div>
+                            <div class="form-group-modern mb-3">
+                                <label for="phone" class="form-label-modern">
+                                    <i class="bi bi-telephone form-icon"></i>
+                                    Nomor HP
+                                </label>
+                                <input type="tel" class="form-control-modern" id="phone" placeholder="08xxxxxxxxxx" required>
+                            </div>
+                            <div class="form-group-modern mb-4">
+                                <label for="message" class="form-label-modern">
+                                    <i class="bi bi-chat-dots form-icon"></i>
+                                    Pesan
+                                </label>
+                                <textarea class="form-control-modern textarea-modern" id="message" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-send-modern">
+                                <span>Kirim Pesan</span>
+                                <i class="bi bi-send-fill ms-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Right Column - Contact Info -->
+                <div class="col-lg-6">
+                    <div class="contact-info-wrapper-modern">
+                        <div class="info-header">
+                            <h2 class="contact-info-title-modern mb-1">Hubungi Kami</h2>
+                            <p class="info-subtitle">Pilih metode kontak yang paling nyaman untuk Anda</p>
+                        </div>
+                        <div class="contact-methods-modern">
+                            <a href="#" class="contact-method-item-modern">
+                                <div class="contact-icon-circle">
+                                    <i class="bi bi-whatsapp contact-icon-modern"></i>
+                                </div>
+                                <div class="contact-method-content-modern">
+                                    <div class="contact-method-label-modern">WhatsApp</div>
+                                    <div class="contact-method-value-modern">+628388080852</div>
+                                </div>
+                                <i class="bi bi-arrow-right contact-arrow"></i>
+                            </a>
+                            <a href="#" class="contact-method-item-modern">
+                                <div class="contact-icon-circle">
+                                    <i class="bi bi-telegram contact-icon-modern"></i>
+                                </div>
+                                <div class="contact-method-content-modern">
+                                    <div class="contact-method-label-modern">Telegram</div>
+                                    <div class="contact-method-value-modern">Tokotopup_care</div>
+                                </div>
+                                <i class="bi bi-arrow-right contact-arrow"></i>
+                            </a>
+                            <a href="#" class="contact-method-item-modern">
+                                <div class="contact-icon-circle">
+                                    <i class="bi bi-envelope-fill contact-icon-modern"></i>
+                                </div>
+                                <div class="contact-method-content-modern">
+                                    <div class="contact-method-label-modern">E-Mail</div>
+                                    <div class="contact-method-value-modern">@Tokotopup.Id</div>
+                                </div>
+                                <i class="bi bi-arrow-right contact-arrow"></i>
+                            </a>
+                        </div>
+                        <div class="social-section-modern">
+                            <div class="social-divider-modern">
+                                <span>Ikuti Kami</span>
+                            </div>
+                            <div class="social-icons-modern d-flex gap-3 justify-content-center">
+                                <a href="#" class="social-icon-modern" aria-label="Instagram">
+                                    <img src="foto/instagram.png" alt="Instagram" class="social-img-modern">
+                                </a>
+                                <a href="#" class="social-icon-modern" aria-label="X (Twitter)">
+                                    <img src="foto/x.png" alt="X" class="social-img-modern">
+                                </a>
+                                <a href="#" class="social-icon-modern" aria-label="Facebook">
+                                    <img src="foto/facebook.png" alt="Facebook" class="social-img-modern">
+                                </a>
+                                <a href="#" class="social-icon-modern" aria-label="Discord">
+                                    <img src="foto/discord.png" alt="Discord" class="social-img-modern">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="contact-cta-wrapper-modern">
+                        <div class="cta-content-modern">
+                            <div class="cta-text-wrapper">
+                                <p class="contact-cta-text-modern mb-0">Semua Dapat Disesuaikan Dengan Kebutuhan Perusahaan Anda. Hubungi Kami Untuk Berdiskusi Lebih Lanjut.</p>
+                            </div>
+                            <button class="btn btn-contact-cta-modern">
+                                <span>Kontak Kami</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="footer-logo text-white mb-3">Tokotopup.id</h3>
+                    <p class="footer-tagline text-white mb-4">Bangun Bisnis Top Up Otomatis Bersama Kami.</p>
+                    <div class="social-icons d-flex gap-3">
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <img src="foto/instagram.png" alt="Instagram" class="social-img">
+                            <div class="social-icon-fallback">IG</div>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="X (Twitter)">
+                            <img src="foto/x.png" alt="X" class="social-img">
+                            <div class="social-icon-fallback">X</div>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <img src="foto/facebook.png" alt="Facebook" class="social-img">
+                            <div class="social-icon-fallback">FB</div>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Discord">
+                            <img src="foto/discord.png" alt="Discord" class="social-img">
+                            <div class="social-icon-fallback">DC</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="footer-heading text-white mb-3">Kontak kami</h4>
+                    <div class="contact-info">
+                        <p class="text-white mb-2">cs@tokotopup.id</p>
+                        <p class="text-white mb-2"><a href="#" class="text-white text-decoration-underline">WhatsApp +628388080852</a></p>
+                        <p class="text-white mb-0"><a href="#" class="text-white text-decoration-underline">Telegram @tokotopup_care</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="footer-heading text-white mb-3">Komunitas</h4>
+                    <p class="community-desc text-white mb-3">Kamu bisa gabung ke channel kami untuk mendapatkan informasi terbaru</p>
+                    <div class="community-buttons d-flex flex-column gap-2">
+                        <button class="btn btn-community">Telegram Channel</button>
+                        <button class="btn btn-community">Whatsapp Group</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider my-4">
+            <div class="row">
+                <div class="col-12 text-center mb-3">
+                    <nav class="footer-nav d-flex justify-content-center flex-wrap gap-4">
+                        <a href="#" class="footer-nav-link text-white text-decoration-none">Beranda</a>
+                        <a href="#" class="footer-nav-link text-white text-decoration-none">Solusi</a>
+                        <a href="#" class="footer-nav-link text-white text-decoration-none">Fitur</a>
+                        <a href="#" class="footer-nav-link text-white text-decoration-none">Harga</a>
+                        <a href="#" class="footer-nav-link text-white text-decoration-none">Afiliasi</a>
+                    </nav>
+                </div>
+                <div class="col-12 text-center">
+                    <p class="footer-copyright text-white mb-0">© 2025 TokoTopup. Powered By <a href="#" class="text-white text-decoration-underline">PT Aplikasi Kreasi Indonesia</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Contact Page JS -->
+    <script src="js/contact.js"></script>
+</body>
+</html>
+

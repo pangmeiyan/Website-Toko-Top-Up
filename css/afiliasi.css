@@ -1,0 +1,1057 @@
+/* ============================================
+   AFFILIATE PAGE STYLES
+   ============================================ */
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #000000;
+    color: #FFFFFF;
+    overflow-x: hidden;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 100vw;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+}
+
+/* Global Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================================
+   NAVBAR STYLES - Using style.css from index.html
+   All navbar styles removed - using style.css instead
+   ============================================ */
+/* Navbar styles removed - using style.css from index.html */
+
+/* All navbar styles removed - using style.css from index.html */
+
+/* Affiliate Hero Section */
+.affiliate-hero-section {
+    padding: 140px 0 100px;
+    padding-top: 180px !important;
+    background-image: url(../foto/Rectangle\ 105.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+.affiliate-hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Steps Section */
+.steps-section {
+    background: #000000;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.steps-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.steps-title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #60a5fa;
+    text-align: center;
+    margin-bottom: 80px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease 0.2s forwards;
+    text-shadow: 0 0 20px rgba(96, 165, 250, 0.3);
+}
+
+.steps-container {
+    position: relative;
+    padding-left: 60px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.steps-container::before {
+    content: '';
+    position: absolute;
+    left: 112px;
+    top: 90px;
+    height: calc(100% - 105px - 35px);
+    width: 4px;
+    background: linear-gradient(180deg, #3b82f6 0%, #60a5fa 50%, #93c5fd 100%);
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+.step-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease forwards;
+    transition: transform 0.3s ease;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.02);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.step-item:hover {
+    transform: translateX(10px) translateY(-5px);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(96, 165, 250, 0.3);
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);
+}
+
+.step-item:nth-child(1) {
+    animation-delay: 0.4s;
+}
+
+.step-item:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.step-item:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+.step-item:nth-child(4) {
+    animation-delay: 1s;
+    margin-bottom: 0;
+}
+
+.step-number {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: 700;
+    margin-right: 30px;
+    position: relative;
+    z-index: 2;
+    flex-shrink: 0;
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4), 0 0 30px rgba(96, 165, 250, 0.3);
+    transition: all 0.3s ease;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+.step-item:hover .step-number {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 12px 30px rgba(59, 130, 246, 0.6), 0 0 40px rgba(96, 165, 250, 0.5);
+}
+
+.step-content {
+    flex: 1;
+    padding-top: 8px;
+}
+
+.step-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+    transition: color 0.3s ease;
+}
+
+.step-item:hover .step-title {
+    color: #60a5fa;
+    text-shadow: 0 0 10px rgba(96, 165, 250, 0.5);
+}
+
+.step-description {
+    font-size: 17px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.7;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.step-item:hover .step-description {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+/* How It Works Section */
+.how-it-works-section {
+    background-image: url(../foto/181.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    position: relative;
+}
+
+.how-it-works-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #FFFFFF;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease 0.2s forwards;
+}
+
+.how-it-works-intro {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease 0.4s forwards;
+}
+
+.rules-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-top: 40px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease 0.6s forwards;
+}
+
+.rules-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease 0.8s forwards;
+}
+
+.rule-item {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.rule-item::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #60a5fa;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.rule-item:last-child {
+    margin-bottom: 0;
+}
+
+.btn-register-affiliate {
+    background-color: #4b5563;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 35px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease 1s forwards;
+}
+
+.btn-register-affiliate:hover {
+    background-color: #374151;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Phone Mockups */
+.phone-mockups {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    position: relative;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease 0.6s forwards;
+    padding-right: 0;
+    overflow: visible;
+    min-height: 400px;
+}
+
+.phone-image {
+    object-fit: contain;
+    object-position: center center;
+    display: block;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.phone-image.phone-left {
+    width: 130%;
+    height: 650px;
+    top: -5px;
+    left: -180px;
+    transform: rotate(-15deg) scale(0.9);
+    opacity: 0.8;
+    z-index: 1;
+    position: absolute;
+}
+
+/* Responsive for 1024px and above */
+@media (min-width: 1024px) {
+    /* Fix navbar covering content */
+    .affiliate-hero-section {
+        padding-top: 180px !important;
+    }
+    
+    .phone-mockups {
+        justify-content: center !important;
+        padding-right: 0 !important;
+        overflow: visible !important;
+        position: relative !important;
+        min-height: 400px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    .phone-image.phone-left {
+        width: 140% !important;
+        height: 750px !important;
+        top: -5px !important;
+        left: -180px !important;
+        transform: rotate(-15deg) scale(0.9) !important;
+        opacity: 0.8 !important;
+        z-index: 1 !important;
+        position: absolute !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+    
+    .phone-image.phone-right {
+        width: 110% !important;
+        height: 600px !important;
+        transform: rotate(5deg) !important;
+        z-index: 2 !important;
+        position: absolute !important;
+        margin-right: -150px !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+}
+
+/* Responsive for 1440px and above - same as 1024px */
+@media (min-width: 1440px) {
+    .phone-mockups {
+        justify-content: center;
+        padding-right: 0;
+        overflow: visible;
+        position: relative;
+        min-height: 400px;
+    }
+    
+    .phone-image.phone-left {
+        width: 130% !important;
+        height: 650px !important;
+        top: -5px !important;
+        left: -180px !important;
+        transform: rotate(-15deg) scale(0.9) !important;
+        opacity: 0.8 !important;
+        z-index: 1 !important;
+        position: absolute !important;
+    }
+    
+    .phone-image.phone-right {
+        width: 110% !important;
+        height: 600px !important;
+        transform: rotate(5deg) !important;
+        z-index: 2 !important;
+        position: absolute !important;
+        margin-right: -150px !important;
+    }
+}
+
+/* Responsive for tablets (769px-1023px) */
+@media (max-width: 1023px) and (min-width: 769px) {
+    .container {
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .affiliate-hero-title {
+        font-size: 40px;
+        padding: 0 10px;
+    }
+    
+    .steps-section {
+        padding: 80px 0;
+    }
+    
+    .steps-container {
+        padding-left: 50px;
+        max-width: 100%;
+        padding-right: 20px;
+    }
+    
+    .steps-container::before {
+        left: 90px;
+    }
+    
+    .step-item {
+        padding: 18px;
+        margin-bottom: 50px;
+    }
+    
+    .step-number {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+    
+    .step-title {
+        font-size: 20px;
+    }
+    
+    .step-description {
+        font-size: 16px;
+    }
+    
+    .how-it-works-section {
+        padding: 80px 0;
+    }
+    
+    .how-it-works-title {
+        font-size: 32px;
+    }
+    
+    .how-it-works-intro {
+        font-size: 17px;
+    }
+    
+    .rules-title {
+        font-size: 22px;
+    }
+}
+
+/* Responsive for above 768px (769px-1023px) - same style as 1024px */
+@media (min-width: 769px) and (max-width: 1023px) {
+    /* Fix navbar covering content */
+    .affiliate-hero-section {
+        padding-top: 200px !important;
+    }
+    
+    .affiliate-hero-title {
+        font-size: 40px;
+    }
+    
+    .steps-section {
+        padding: 80px 0;
+    }
+    
+    .steps-title {
+        font-size: 36px;
+        margin-bottom: 60px;
+    }
+    
+    .how-it-works-section {
+        padding: 80px 0;
+    }
+    
+    .how-it-works-section .container {
+        overflow: visible !important;
+    }
+    
+    .how-it-works-section .row {
+        overflow: visible !important;
+    }
+    
+    .how-it-works-section .col-lg-6 {
+        overflow: visible !important;
+    }
+    
+    .how-it-works-title {
+        font-size: 32px;
+    }
+    
+    .phone-mockups {
+        justify-content: center !important;
+        padding-right: 0 !important;
+        overflow: visible !important;
+        position: relative !important;
+        min-height: 400px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    .phone-image.phone-left {
+        width: 130% !important;
+        height: 650px !important;
+        max-width: none !important;
+        top: -5px !important;
+        left: -180px !important;
+        transform: rotate(-15deg) scale(0.9) !important;
+        opacity: 0.8 !important;
+        z-index: 1 !important;
+        position: absolute !important;
+        display: block !important;
+        visibility: visible !important;
+        margin-right: 0 !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    
+    .phone-image.phone-right {
+        width: 110% !important;
+        max-width: none !important;
+        height: 600px !important;
+        transform: rotate(5deg) !important;
+        z-index: 2 !important;
+        position: absolute !important;
+        margin-right: -150px !important;
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        display: block !important;
+        visibility: visible !important;
+        top: auto !important;
+        bottom: auto !important;
+    }
+}
+
+/* Responsive for below 990px (769px-990px) - adjusted for smaller tablets */
+@media (max-width: 990px) and (min-width: 769px) {
+    .affiliate-hero-section {
+        padding-top: 200px !important;
+    }
+    
+    .affiliate-hero-title {
+        font-size: 36px;
+    }
+    
+    .steps-section {
+        padding: 70px 0;
+    }
+    
+    .steps-title {
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+    
+    .how-it-works-section {
+        padding: 70px 0;
+    }
+    
+    .how-it-works-section .container {
+        overflow: visible !important;
+    }
+    
+    .how-it-works-section .row {
+        overflow: visible !important;
+    }
+    
+    .how-it-works-section .col-lg-6 {
+        overflow: visible !important;
+    }
+    
+    .how-it-works-title {
+        font-size: 28px;
+    }
+    
+    .phone-mockups {
+        justify-content: center !important;
+        padding-right: 0 !important;
+        overflow: visible !important;
+        position: relative !important;
+        min-height: 400px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    .phone-image.phone-left {
+        width: 130% !important;
+        height: 650px !important;
+        max-width: none !important;
+        top: -5px !important;
+        left: -180px !important;
+        transform: rotate(-15deg) scale(0.9) !important;
+        opacity: 0.8 !important;
+        z-index: 1 !important;
+        position: absolute !important;
+        display: block !important;
+        visibility: visible !important;
+        margin-right: 0 !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    
+    .phone-image.phone-right {
+        width: 110% !important;
+        max-width: none !important;
+        height: 600px !important;
+        transform: rotate(5deg) !important;
+        z-index: 2 !important;
+        position: absolute !important;
+        margin-right: -150px !important;
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        display: block !important;
+        visibility: visible !important;
+        top: auto !important;
+        bottom: auto !important;
+    }
+}
+
+/* Phone image base styling - will be overridden by media queries */
+.phone-image.phone-right {
+    width: 110%;
+    height: 600px;
+    transform: rotate(5deg);
+    z-index: 2;
+    position: absolute;
+    margin-right: -150px;
+}
+
+/* Media query 768px dihapus - digabung dengan 425px */
+
+/* Media query 424px dihapus - digabung dengan 375px */
+
+/* Responsive for min-width 425px and max-width 768px */
+@media (min-width: 425px) and (max-width: 768px) {
+    .container {
+        max-width: 100% !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    
+    .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    
+    [class*="col-"] {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    
+    .affiliate-hero-section {
+        padding: 120px 0 80px;
+        padding-top: 150px !important;
+    }
+    
+    .affiliate-hero-title {
+        font-size: 28px;
+        padding: 0 15px;
+        word-wrap: break-word;
+    }
+    
+    .steps-section {
+        padding: 60px 0;
+    }
+    
+    .steps-title {
+        font-size: 22px;
+        margin-bottom: 40px;
+        padding: 0 15px;
+        line-height: 1.4;
+        word-wrap: break-word;
+    }
+    
+    .steps-container {
+        padding-left: 20px;
+        padding-right: 15px;
+        max-width: 100%;
+    }
+    
+    .steps-container::before {
+        left: 60px;
+        width: 3px;
+        top: 50px;
+        height: calc(100% - 50px - 40px);
+    }
+    
+    .step-item {
+        margin-bottom: 30px;
+        padding: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 100%;
+    }
+    
+    .step-number {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        margin-right: 0;
+        margin-bottom: 15px;
+        align-self: flex-start;
+    }
+    
+    .step-content {
+        padding-top: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .step-title {
+        font-size: 18px;
+        margin-bottom: 8px;
+        word-wrap: break-word;
+    }
+    
+    .step-description {
+        font-size: 14px;
+        line-height: 1.6;
+        word-wrap: break-word;
+    }
+    
+    .how-it-works-section {
+        padding: 60px 0;
+    }
+    
+    .how-it-works-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+        word-wrap: break-word;
+    }
+    
+    .how-it-works-intro {
+        font-size: 15px;
+        margin-bottom: 25px;
+        word-wrap: break-word;
+    }
+    
+    .rules-title {
+        font-size: 18px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        word-wrap: break-word;
+    }
+    
+    .rule-item {
+        font-size: 14px;
+        margin-bottom: 12px;
+        word-wrap: break-word;
+    }
+    
+    .btn-register-affiliate {
+        font-size: 16px;
+        padding: 12px 28px;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    /* ============================================
+       PHONE IMAGE STYLING - RESPONSIVE 425px
+       Mudah diatur, ubah nilai di bawah ini
+       ============================================ */
+    
+    /* Container untuk phone images */
+    .phone-mockups {
+        justify-content: center !important;
+        padding-right: 0 !important;
+        overflow: visible !important;
+        position: relative !important;
+        min-height: 480px !important; /* Tinggi container - ubah sesuai kebutuhan */
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    /* Phone Kiri (Background) */
+    .phone-mockups .phone-image.phone-left {
+        width: 160% !important;
+        max-width: 680px !important;
+        height: 880px !important;
+        max-height: 600px !important;
+        top: 90px !important;
+        left: -190px !important;
+        transform: rotate(-15deg) scale(0.85) !important;
+        opacity: 0.8 !important;
+        z-index: 1 !important;
+        position: absolute !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+    
+    /* Phone Kanan (Foreground) */
+    .phone-mockups .phone-image.phone-right {
+        /* Ukuran */
+        width: 110% !important; /* Lebar phone - ubah untuk memperbesar/mengecil */
+        max-width: 550px !important; /* Batas maksimum lebar - ubah sesuai kebutuhan */
+        height: 520px !important; /* Tinggi phone - ubah untuk memperbesar/mengecil */
+        max-height: 550px !important; /* Batas maksimum tinggi - ubah sesuai kebutuhan */
+        
+        /* Posisi */
+        top: -5px !important; /* Posisi vertikal - naik/turun */
+        margin-right: -55px !important; /* Posisi horizontal - geser kiri/kanan (negatif = kanan) */
+        
+        /* Rotasi */
+        transform: rotate(5deg) !important; 
+        /* rotate(5deg) = miring ke kanan, ubah angka untuk mengubah sudut */
+        
+        /* Tampilan */
+        z-index: 2 !important; /* Layer di depan */
+        position: absolute !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+    
+    .footer {
+        overflow-x: hidden;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* Responsive khusus untuk layar 700px-768px agar phone image tidak terlalu besar */
+@media (min-width: 700px) and (max-width: 768px) {
+    .phone-mockups .phone-image.phone-left {
+        max-width: 750px !important; /* Batas maksimum lebar untuk layar besar */
+        max-height: 680px !important; /* Batas maksimum tinggi untuk layar besar */
+    }
+    
+    .phone-mockups .phone-image.phone-right {
+        max-width: 520px !important; /* Batas maksimum lebar untuk layar besar */
+        max-height: 530px !important; /* Batas maksimum tinggi untuk layar besar */
+    }
+}
+
+/* Responsive for max-width 425px (425px and below) */
+@media (max-width: 425px) {
+    /* Styling untuk max-width 425px bisa ditambahkan di sini jika diperlukan */
+    /* Saat ini menggunakan styling dari media query 375px-425px di bawah */
+}
+
+/* Responsive for 375px to 425px */
+@media (min-width: 375px) and (max-width: 425px) {
+    .container {
+        max-width: 100% !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    
+    .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    
+    [class*="col-"] {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    
+    .affiliate-hero-section {
+        padding: 120px 0 80px;
+        padding-top: 150px !important;
+    }
+    
+    .affiliate-hero-title {
+        font-size: 28px;
+        padding: 0 15px;
+        word-wrap: break-word;
+    }
+    
+    .steps-section {
+        padding: 60px 0;
+    }
+    
+    .steps-title {
+        font-size: 22px;
+        margin-bottom: 40px;
+        padding: 0 15px;
+        line-height: 1.4;
+        word-wrap: break-word;
+    }
+    
+    .steps-container {
+        padding-left: 20px;
+        padding-right: 15px;
+        max-width: 100%;
+    }
+    
+    .steps-container::before {
+        left: 60px;
+        width: 3px;
+        top: 50px;
+        height: calc(100% - 50px - 40px);
+    }
+    
+    .step-item {
+        margin-bottom: 30px;
+        padding: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 100%;
+    }
+    
+    .step-number {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        margin-right: 0;
+        margin-bottom: 15px;
+        align-self: flex-start;
+    }
+    
+    .step-content {
+        padding-top: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .step-title {
+        font-size: 18px;
+        margin-bottom: 8px;
+        word-wrap: break-word;
+    }
+    
+    .step-description {
+        font-size: 14px;
+        line-height: 1.6;
+        word-wrap: break-word;
+    }
+    
+    .how-it-works-section {
+        padding: 60px 0;
+    }
+    
+    .how-it-works-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+        word-wrap: break-word;
+    }
+    
+    .how-it-works-intro {
+        font-size: 15px;
+        margin-bottom: 25px;
+        word-wrap: break-word;
+    }
+    
+    .rules-title {
+        font-size: 18px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        word-wrap: break-word;
+    }
+    
+    .rule-item {
+        font-size: 14px;
+        margin-bottom: 12px;
+        word-wrap: break-word;
+    }
+    
+    .btn-register-affiliate {
+        font-size: 16px;
+        padding: 12px 28px;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    /* ============================================
+       PHONE IMAGE STYLING - RESPONSIVE 375px
+       Mudah diatur, ubah nilai di bawah ini
+       ============================================ */
+    
+    /* Container untuk phone images */
+    .phone-mockups {
+        justify-content: center !important;
+        padding-right: 0 !important;
+        overflow: visible !important;
+        position: relative !important;
+        min-height: 450px !important; /* Tinggi container - ubah sesuai kebutuhan */
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    /* Phone Kiri (Background) */
+    .phone-mockups .phone-image.phone-left {
+        width: 180% !important;
+        height: 700px !important;
+        top: 20px !important;
+        left: -190px !important;
+        transform: rotate(-15deg) scale(0.8) !important;
+        opacity: 0.8 !important;
+        z-index: 1 !important;
+        position: absolute !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+    
+    /* Phone Kanan (Foreground) */
+    .phone-mockups .phone-image.phone-right {
+        /* Ukuran */
+        width: 100% !important; /* Lebar phone - ubah untuk memperbesar/mengecil */
+        height: 460px !important; /* Tinggi phone - ubah untuk memperbesar/mengecil */
+        
+        /* Posisi */
+        top: 0 !important; /* Posisi vertikal - naik/turun */
+        margin-right: -75px !important; /* Posisi horizontal - geser kiri/kanan (negatif = kanan) */
+        
+        /* Rotasi */
+        transform: rotate(5deg) !important; 
+        /* rotate(5deg) = miring ke kanan, ubah angka untuk mengubah sudut */
+        
+        /* Tampilan */
+        z-index: 2 !important; /* Layer di depan */
+        position: absolute !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+    
+    .footer {
+        overflow-x: hidden;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
