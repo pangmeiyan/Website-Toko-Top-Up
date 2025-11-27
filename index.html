@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Toko Top Up - Home</title>
+   <link rel="shortcut icon" href="img/" type="image/x-icon">
+   <!-- css -->
+   <link rel="stylesheet" href="css/index.css">
+   <!-- bootstrap -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- icon -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+   <!-- animation -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   <!-- font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body style="background: black;">
+
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="TOKOTOPUP" class="logo-image">
+            </a>
+            <div class="d-flex align-items-center gap-2">
+                <button class="btn btn-member-area-icon d-lg-none" type="button" aria-label="Member Area">
+                    <i class="bi bi-person-circle"></i>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom active" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="solusi.html">Solusi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="fitur.html">Fitur</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="harga.html">Harga</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="afiliasi.html">Afiliasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="contact.html">Hubungi Kami</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn-member-area">Member Area</button>
+                </div>
+            </div>
+        </div>
+   </nav>
+   <!-- Navbar end -->
+
+   <!-- hero section -->
+   <div class="container-fluid hero-section position-relative py-3">
+      <div class="containerr rounded-3 py-2 py-sm-5 py-md-0">
+         <div class="row justify-content-center align-items-center px-4">
+            <div class="col-sm-12 col-md-6 col-xl-6">
+               <h1 class="fw-bold">Software Top-Up Game Otomatis</h1>
+               <p class="fw-normal">Tokotopup.id merupakan sebuah software yang di rancang khusus untuk membuat website/aplikasi topup game & Pembayaran Online (PPOB) bebasis cloud.</p>
+               <div class="d-flex">
+                  <button class="btn1-custom rounded-3">
+                     <a href="#" class="text-decoration-none text-white">Lihat Demo</a>
+                  </button>
+                  <button class="btn2-custom rounded-3 ms-3">
+                     <a href="#fitur" class="text-decoration-none text-white">Lihat Fitur</a>
+                  </button>
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-6">
+               <img src="img/hero.png" class="img-fluid">
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- hero section end -->
+
+   <!-- media besar dan fitur unggulan -->
+   <div class="container-fluid media-besar position-relative" style="padding-top: 70px;">
+      <h4 class="text-center">
+         TokoTopUp telah diliputi oleh berbagai media besar di Indonesia
+      </h4>
+      <div class="slider py-4">
+         <div class="slide-track">
+            <div class="media-img"><img src="img/industricoid.png" alt=""></div>
+            <div class="media-img"><img src="img/detiknet.png" alt=""></div>
+            <div class="media-img"><img src="img/haluan.png" alt=""></div>
+            <div class="media-img"><img src="img/tribun.png" alt=""></div>
+
+            <!-- duplikasi supaya loop mulus -->
+            <div class="media-img"><img src="img/industricoid.png" alt=""></div>
+            <div class="media-img"><img src="img/detiknet.png" alt=""></div>
+            <div class="media-img"><img src="img/haluan.png" alt=""></div>
+            <div class="media-img"><img src="img/tribun.png" alt=""></div>
+         </div>
+      </div>
+
+      <section class="fitur py-5" id="fitur">
+         <div class="container">
+            <h2 class="text-center mb-5 text-gradient fw-bold">
+               Fitur Unggulan Yang Kami Berikan
+            </h2>
+
+            <div class="row align-items-center">
+               <!-- KIRI -->
+               <div class="col-md-3 text-md-end text-center mb-4 mb-md-0">
+                  <div class="mb-5">
+                     <img src="img/transaction.png" class="icon-fitur mb-2">
+                     <h5 class="fw-bold font-inter">Transaksi Otomatis</h5>
+                     <p>Semua Transaksi Game Di Proses Secara Otomatis 24jam Non-Stop.</p>
+                  </div>
+                  <div>
+                     <img src="img/shield.png" class="icon-fitur mb-2">
+                     <h5 class="fw-bold font-inter">Lebih Aman</h5>
+                     <p>Software Kami Menggunakan Teknologi Terbaru & Sudah Teruji.</p>
+                  </div>
+               </div>
+
+               <!-- TENGAH (HP MOCKUP) -->
+               <div class="col-md-6 text-center hp-bg">
+                  <img src="img/iPhone.png" class="hp-mockup img-fluid w-70">
+               </div>
+
+               <!-- KANAN -->
+               <div class="col-md-3 text-md-start text-center mt-4 mt-md-0">
+                  <div class="mb-5">
+                     <img src="img/controller.png" class="icon-fitur mb-2">
+                     <h5 class="fw-bold font-inter">Game Lengkap</h5>
+                     <p>Lebih Dari 50+ Jenis Game & Semuanya Proses Otomatis.</p>
+                  </div>
+
+                  <div>
+                     <img src="img/blank-page.png" class="icon-fitur mb-2">
+                     <h5 class="fw-bold font-inter">Laporan Penjualan</h5>
+                     <p>Laporan Penjualan Rinci, Mulai Omset Hingga Profit Secara Otomatis.</p>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </section>
+
+   </div>
+   <!-- media besar dan fitur unggulan end-->
+
+   <!-- mengapa pilih toko top up id -->
+   <div class="container-fluid mengapa-section py-5 position-relative">
+      <div class="container">
+         <h1 class="fw-bold display-5 text-center mt-5">Mengapa Memilih Tokotopup.id ?</h1>
+         <div class="row py-2">
+            <div class="col-sm-12 col-md-6 col-xl-4 why mt-4">
+               <div class="card py-3 px-3">
+                  <div class="d-flex">
+                     <div class="icon-bg">
+                        <img src="img/membership icon.png" alt="">
+                     </div>
+                     <div class="title mt-4">
+                        <h6 class="fs-5 fw-bold font-inter">Multi Membership</h6>
+                     </div>
+                  </div>
+                  <p class="mt-4">Tersedia fitur untuk mengatur level user kamu, sistem kami menyediakan 3 level akun untuk member kamu, yakni Basic, Gold, & Platinum, kamu bisa set harga jual yg berbeda di masing-masing level</p>
+                  <a href="#" class="text-decoration-none text-white ">
+                     Learn More 
+                     <i class="bi bi-chevron-right"></i>
+                  </a>
+               </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-xl-4 why mt-4">
+               <div class="card py-3 px-3">
+                  <div class="d-flex">
+                     <div class="icon-bg">
+                        <img src="img/services.png" alt="">
+                     </div>
+                     <div class="title mt-4">
+                        <h6 class="fs-5 fw-bold font-inter">Support Produk PPOB</h6>
+                     </div>
+                  </div>
+                  <p class="mt-4">Software kami bisa untuk di-integrasikan dengan produk PPOB, seperti : pulsa, paket data, token listrik, voucher, paket telpon & sms, transfer bank, topup e-wallet, pembayaran tagihan, dll</p>
+                  <a href="#" class="text-decoration-none text-white ">
+                     Learn More 
+                     <i class="bi bi-chevron-right"></i>
+                  </a>
+               </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-xl-4 why mt-4">
+               <div class="card py-3 px-3">
+                  <div class="d-flex">
+                     <div class="icon-bg">
+                        <img src="img/high-price.png" alt="">
+                     </div>
+                     <div class="title mt-4">
+                        <h6 class="fs-5 fw-bold font-inter">Multi Payment Gateway</h6>
+                     </div>
+                  </div>
+   
+                  <p class="mt-4">Kamu bisa integrasi ke berbagai macam penyedia payment gateway seperti xendit, dutku, ipaymu, tripay, durianpay, dan lainnya. Yg semuanya bisa aktif secara bersamaan</p>
+                  <a href="#" class="text-decoration-none text-white ">
+                     Learn More 
+                     <i class="bi bi-chevron-right"></i>
+                  </a>
+               </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-xl-4 why mt-4">
+               <div class="card py-3 px-3">
+                  <div class="d-flex">
+                     <div class="icon-bg">
+                        <img src="img/store.png" alt="">
+                     </div>
+                     <div class="title mt-4">
+                        <h6 class="fs-5 fw-bold font-inter">Multi Vendor Transaksi</h6>
+                     </div>
+                  </div>
+                  <p class="mt-4">Software kami bisa integrasi ke banyak vendor : Apigames, Digiflazz, Dan lain-lain nya. semuanya bisa aktif secara bersamaan, mudah untuk ubah vendor untuk produk tertentu</p>
+                  <a href="#" class="text-decoration-none text-white ">
+                     Learn More 
+                     <i class="bi bi-chevron-right"></i>
+                  </a>
+               </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-xl-4 why mt-4">
+               <div class="card py-3 px-3">
+                  <div class="d-flex">
+                     <div class="icon-bg">
+                        <img src="img/sync.png" alt="">
+                     </div>
+                     <div class="title mt-4">
+                        <h6 class="fs-5 fw-bold font-inter">Auto Sync Produk</h6>
+                     </div>
+                  </div>
+                  <p class="mt-4">Kamu tidak perlu khawatir jika terjadi perubahan harga/status produk di Vendor, software kami memiliki fitur auto sync, jadi harga & status produk akan mengikuti data terbaru dari vendor</p>
+                  <a href="#" class="text-decoration-none text-white ">
+                     Learn More 
+                     <i class="bi bi-chevron-right"></i>
+                  </a>
+               </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-xl-4 why mt-4">
+               <div class="card py-3 px-3">
+                  <div class="d-flex">
+                     <div class="icon-bg">
+                        <img src="img/adjust.png" alt="">
+                     </div>
+                     <div class="title mt-4">
+                        <h6 class="fs-5 fw-bold font-inter">Powerfull Admin Panel</h6>
+                     </div>
+                  </div>
+                  <p class="mt-4">Kami mmenyediakan admin panel dengan fitur yang sangat lengkap. Kamu akan merasakan mudahnya untuk mengatur produk, harga, hingga tampilan web kamu</p>
+                  <a href="#" class="text-decoration-none text-white ">
+                     Learn More 
+                     <i class="bi bi-chevron-right"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="d-flex justify-content-center py-5">
+            <button class="btn1-custom rounded-3">
+               <a href="#" class="text-decoration-none text-white">Lihat Semua Fitur</a>
+            </button>
+         </div>
+      </div>
+   </div>
+   <!-- mengapa pilih toko top up id end -->
+
+   <!-- produk yg bisa km jual -->
+   <div class="container-fluid produk-section position-relative">
+      <div class="container">
+         <div class="row justify-content-center align-items-center">
+            <div class="col-sm-12 col-md-6 col-xl-6">
+               <img src="img/produkygbisakm jual.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-6">
+               <p class="fw-medium small-text">Produk Yang Bisa Kamu Jual</p>
+               <h2 class="fw-bold" style="margin-top: -5px;">Menggunakan Tokotopup kamu bisa jual lebih dari 3400+ produk yang tersedia.</h2>
+               <p class="mt-4">Tokotopup.id merupakan sebuah software yang di rancang khusus untuk membuat website/aplikasi topup game & pembayaran online bebasis cloud. selain bisa di gunakan untuk membuat website topup game, Tokotopup.id juga bisa di gunakan untuk membuat aplikasi PPOB</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- produk yg bisa km jual end -->
+
+   <!-- faqs -->
+   <div class="container-fluid faqs-section position-relative">
+      <div class="container">
+         <h1 class="text-gradient display-5 fw-bold text-center">Frequently Asked Question</h1>
+         <p class="text-center font-inter lh-base">Jika Anda tidak melihat jawaban atas pertanyaan Anda, Anda dapat mengirimkan email kepada kami dari formulir kontak kami.</p>
+
+         <div class="faqs-1 mt-5">
+            <h4 class="fw-bold">Teknis & Sistem</h4>
+            <p style="margin-top: -5px;">Mengenai hosting, server, keamanan, source code, dan proses pengerjaan</p>
+            <div class="faqs-wrapper">
+               <div class="faq">
+                  <button class="accordion">
+                  Untuk Server atau Hosting bagaimana?
+                  <i class="bi bi-chevron-down"></i>
+                  </button>
+                  <div class="pannel">
+                  <p>
+                     Website dapat kami pasang di server milik kami ataupun server milik Anda sendiri.<br>
+                     Jika Anda belum memiliki hosting, kami dapat membantu menyediakan sekaligus melakukan konfigurasi agar website siap digunakan.
+                  </p>
+                  </div>
+               </div>
+
+               <div class="faq">
+                  <button class="accordion">
+                  Apakah Bisa Di-install Di Server Milik Sendiri?
+                  <i class="bi bi-chevron-down"></i>
+                  </button>
+                  <div class="pannel">
+                  <p>
+                     Bisa.
+                     Anda akan mendapatkan file website lengkap sehingga dapat di-install di hosting atau server milik Anda sendiri.
+                     Kami juga menyediakan bantuan instalasi jika dibutuhkan.
+                  </p>
+                  </div>
+               </div>
+
+               <div class="faq">
+                  <button class="accordion">
+                  Apakah Ada Biaya Bulanan?
+                  <i class="bi bi-chevron-down"></i>
+                  </button>
+                  <div class="pannel">
+                  <p>
+                     Tidak ada biaya bulanan untuk penggunaan website itu sendiri.<br>
+                     Biaya hanya ada jika:
+                     <ul>
+                        <li>Memakai hosting premium yang berlangganan</li>
+                        <li>Menggunakan layanan tambahan seperti server VPS</li>
+                        <li>Memakai fitur add-on berbayar</li>
+                     </ul>
+                     Selain itu, web dapat digunakan tanpa biaya bulanan tambahan.
+                  </p>
+                  </div>
+               </div>
+
+               <div class="faq">
+                  <button class="accordion">
+                  Apakah Web Memiliki Keamanan Yang Bagus?
+                  <i class="bi bi-chevron-down"></i>
+                  </button>
+                  <div class="pannel">
+                  <p>
+                     Ya. Website sudah dilengkapi dengan fitur keamanan seperti:
+                     <ul>
+                        <li>Proteksi SQL Injection & XSS</li>
+                        <li>Validasi input</li>
+                        <li>Proteksi sesi login</li>
+                        <li>Sistem otorisasi user</li>
+                        <li>SSL/HTTPS</li>
+                     </ul>
+                     Jika menggunakan hosting kami, server juga sudah memiliki firewall & monitoring keamanan.
+                  </p>
+                  </div>
+               </div>
+
+               <div class="faq">
+                  <button class="accordion">
+                  Berapa Lama Proses Pengerjaan Web?
+                  <i class="bi bi-chevron-down"></i>
+                  </button>
+                  <div class="pannel">
+                  <p>
+                     Durasi pengerjaan tergantung kompleksitas:
+                     <ul>
+                        <li>Website standar biasanya 3 – 7 hari kerja</li>
+                        <li>Website sistem yang lebih besar 1 – 3 minggu</li>
+                     </ul>
+                     Timeline dan progres akan kami update kepada Anda secara berkala.
+                  </p>
+                  </div>
+               </div>
+
+               <div class="faq">
+                  <button class="accordion">
+                  Apakah Pembelian Ini Dapat Source Code?
+                  <i class="bi bi-chevron-down"></i>
+                  </button>
+                  <div class="pannel">
+                  <p>
+                     Bisa. Anda akan mendapatkan source code lengkap sehingga:
+                     <ul>
+                        <li>Bisa diedit atau dikembangkan kembali</li>
+                        <li>Bisa dipasang di server sendiri</li>
+                        <li>Tidak terkunci pada sistem kami</li>
+                     </ul>
+                     Jika ingin tanpa source code (lebih murah), itu juga bisa disesuaikan.
+                  </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="faqs-2 mt-5">
+            <h4 class="fw-bold">Fitur & Layanan</h4>
+            <p style="margin-top: -5px;">Mengenai kemampuan website, fungsi transaksi, dan fitur tambahan</p>
+            <div class="faqs-wrapper">
+               <div class="faq">
+                  <button class="accordion">
+                  Apakah ada fitur level untuk member Tokotopup?
+                  <i class="bi bi-chevron-down"></i>
+                  </button>
+                  <div class="pannel">
+                  <p>
+                     Ya, ada. Sistem mendukung fitur level member seperti Reseller, Agen, dan VIP, dengan harga otomatis menyesuaikan level masing-masing pengguna.
+                  </p>
+                  </div>
+               </div>
+
+               <div class="faq">
+                  <button class="accordion">
+                  Apakah bisa atur harga custom?
+                  <i class="bi bi-chevron-down"></i>
+                  </button>
+                  <div class="pannel">
+                  <p>
+                     Tentu bisa. Kamu dapat menentukan harga produk sendiri, baik untuk harga jual umum maupun per level member, sehingga kamu memiliki fleksibilitas penuh dalam menentukan profit.
+                  </p>
+                  </div>
+               </div>
+
+               <div class="faq">
+                  <button class="accordion">
+                  Apakah bisa untuk transaksi manual?
+                  <i class="bi bi-chevron-down"></i>
+                  </button>
+                  <div class="pannel">
+                  <p>
+                     Bisa. Selain otomatis, kamu dapat melakukan input dan proses transaksi secara manual melalui dashboard admin.
+                  </p>
+                  </div>
+               </div>
+
+               <div class="faq">
+                  <button class="accordion">
+                  Apakah bisa untuk transaksi produk joki?
+                  <i class="bi bi-chevron-down"></i>
+                  </button>
+                  <div class="pannel">
+                  <p>
+                     Bisa. Sistem dapat digunakan untuk menjual joki game, jasa top-up, maupun layanan digital lain, lengkap dengan fitur status progress.
+                  </p>
+                  </div>
+               </div>
+
+               <div class="faq">
+                  <button class="accordion">
+                  Apakah bisa jualan pulsa, token listrik, dan produk PPOB lainnya?
+                  <i class="bi bi-chevron-down"></i>
+                  </button>
+                  <div class="pannel">
+                  <p>
+                     Ya, sistem mendukung ISP PPOB untuk pulsa, paket data, token PLN, PDAM, E-Wallet, dan layanan lainnya, tergantung provider API yang digunakan.
+                  </p>
+                  </div>
+               </div>
+
+               <div class="faq">
+                  <button class="accordion">
+                  Apakah bisa untuk dijadikan aplikasi PPOB?
+                  <i class="bi bi-chevron-down"></i>
+                  </button>
+                  <div class="pannel">
+                  <p>
+                     Bisa banget. Sistem bisa dioptimalkan menjadi layanan PPOB penuh, dengan fitur user management, transaksi otomatis, laporan realtime, dan dashboard lengkap.
+                  </p>
+                  </div>
+               </div>
+
+               <div class="faq">
+                  <button class="accordion">
+                  Apakah web memiliki fitur SEO?
+                  <i class="bi bi-chevron-down"></i>
+                  </button>
+                  <div class="pannel">
+                  <p>
+                     Ya. Website dibangun dengan struktur SEO friendly, seperti:
+                     <ul>
+                        <li>Meta title & description</li>
+                        <li>Struktur heading yang benar</li>
+                        <li>Kecepatan akses baik</li>
+                     </ul>
+                     Sehingga membantu website lebih mudah muncul di Google.
+                  </p>
+                  </div>
+               </div>
+
+               <div class="faq">
+                  <button class="accordion">
+                  Apakah bisa dibuatkan versi aplikasi Android?
+                  <i class="bi bi-chevron-down"></i>
+                  </button>
+                  <div class="pannel">
+                  <p>
+                     Bisa. Kamu bisa memesan APK Android berbasis WebView maupun aplikasi full natif, sesuai kebutuhan.
+                  </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="faqs-2 mt-5">
+            <h4 class="fw-bold">Kustomisasi & Penggunaan</h4>
+            <p style="margin-top: -5px;">Mengenai tampilan, personalisasi, dan cara menggunakan sistem</p>
+            <div class="faqs-wrapper">
+               <div class="faq">
+                  <button class="accordion">
+                  Apakah bisa custom design?
+                  <i class="bi bi-chevron-down"></i>
+                  </button>
+                  <div class="pannel">
+                  <p>
+                     Tentu. Desain website bisa diubah sesuai branding kamu, seperti warna, font, tampilan halaman, animasi, layout, dan elemen UI lainnya.
+                  </p>
+                  </div>
+               </div>
+
+               <div class="faq">
+                  <button class="accordion">
+                  Bagaimana cara melakukan registrasi TokoTopup?
+                  <i class="bi bi-chevron-down"></i>
+                  </button>
+                  <div class="pannel">
+                  <p>
+                     Cukup mudah:
+                     <ul>
+                        <li>Daftar melalui halaman registrasi.</li>
+                        <li>Masukkan data yang diminta.</li>
+                        <li>Verifikasi akun.</li>
+                        <li>Setelah berhasil, kamu bisa langsung login dan mulai transaksi.</li>
+                     </ul>
+                  </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+
+      <div class="container mt-5">
+         <div class="cta py-3 px-2 rounded-3" style="background-color: black;">
+            <div class="text-cta">
+               <h6 class="fw-medium font-inter">Semua dapat disesuaikan dengan kebutuhan perusahaan Anda.</h6>
+               <h6 class="fw-medium font-inter">Hubungi kami untuk berdiskusi lebih lanjut.</h6>
+            </div>
+            <button class="btn1-custom rounded-3">
+               <a href="#" class="text-decoration-none text-white">Lihat Demo</a>
+            </button>
+         </div>
+      </div>
+   </div>
+   <!-- faqs end -->
+
+   <!-- footer -->
+   <footer class="site-footer" role="contentinfo">
+      <div class="container">
+         <div class="footer-grid">
+
+            <div>
+               <div class="footer-brand">
+                  <div class="brand-text">
+                     <h3 class="fw-bold">Tokotopup.id</h3>
+                     <p>Bangun Bisnis Top Up Otomatis Bersama Kami.</p>
+
+                     <div class="socials" aria-label="Sosial media Tokotopup">
+                        <a href="#" aria-label="Instagram" title="Instagram">
+                           <i class="bi bi-instagram" style="color: black;"></i>
+                        </a>
+
+                        <a href="#" aria-label="X / Twitter" title="X">
+                           <i class="bi bi-twitter" style="color: black;"></i>
+                        </a>
+
+                        <a href="#" aria-label="Facebook" title="Facebook">
+                           <i class="bi bi-facebook" style="color: black;"></i>
+                        </a>
+
+                        <a href="#" aria-label="Discord" title="Discord">
+                        <i class="bi bi-discord" style="color: black;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            
+            <div class="footer-contact">
+               <h4>Kontak kami</h4>
+               <div class="contact-list">
+                  <span>cs@tokotopup.id</span>
+                  <a href="https://wa.me/628388080852" target="_blank" rel="noopener">WhatsApp +628388080852</a>
+                  <a href="https://t.me/tokotopup_care" target="_blank" rel="noopener">Telegram @tokotopup_care</a>
+               </div>
+            </div>
+
+            <div class="footer-comm">
+               <h4>Komunitas</h4>
+               <p>Kamu bisa gabung ke channel kami untuk mendapatkan informasi terbaru</p>
+
+               <div class="comm-buttons">
+                  <button class="btn1-custom rounded-3">
+                     <a href="#" class="text-decoration-none text-white">Telegram Chanel</a>
+                  </button>
+                  <button class="btn1-custom rounded-3">
+                     <a href="#" class="text-decoration-none text-white">WhatsApp Group</a>
+                  </button>
+               </div>
+            </div>
+
+         </div> 
+
+         <div class="footer-bottom">
+            <nav class="footer-nav" aria-label="Footer navigation">
+               <a href="#">Beranda</a>
+               <a href="#">Solusi</a>
+               <a href="#">Fitur</a>
+               <a href="#">Harga</a>
+               <a href="#">Afiliasi</a>
+            </nav>
+
+           
+         </div>
+      </div>
+      <div class="copyright">
+         © 2025 TokoTopup. Powered By <a href="#" style="color:var(--muted); text-decoration:underline;">PT Aplikasi Kreasi Indonesia</a>
+      </div>
+   </footer>
+   <!-- footer end -->
+
+
+   <!-- js -->
+   <script src="js/script.js"></script>
+   <!-- bootstrap -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
