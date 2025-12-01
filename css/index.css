@@ -631,7 +631,7 @@
 /* hero-section */
 .hero-section{
   position: relative;
-  background-image: url(/img/bg-1.png);
+  background-image: url(../img/bg-1.png);
   background-position: center;
   background-size: cover;
 }
@@ -819,7 +819,7 @@
 /* mengapa-section */
 .mengapa-section{
   position: relative;
-  background-image: url(/img/bg-2.png);
+  background-image: url(../img/bg-2.png);
   background-position: center;
   background-size: cover;
 }
@@ -899,7 +899,7 @@
 /* produk section */
 .produk-section{
   position: relative;
-  background-image: url(/img/bg-3.png);
+  background-image: url(../img/bg-3.png);
   background-position: center;
   background-size: cover;
 }
