@@ -631,7 +631,7 @@
 /* hero section */
 .hero-section{
   position: relative;
-  background-image: url(/img/bg-6.png);
+  background-image: url(../img/bg-6.png);
   background-position: center;
   background-size: cover;
 }
